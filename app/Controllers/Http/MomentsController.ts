@@ -6,7 +6,8 @@ export default class MomentsController {
     public async store({request, response}: HttpContextContract ) {
         
         const body = request.body()
-
+        
+        const moment = 
         return body
 
     }
