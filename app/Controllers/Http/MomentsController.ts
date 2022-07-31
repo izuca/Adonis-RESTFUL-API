@@ -7,8 +7,14 @@ export default class MomentsController {
         
         const body = request.body()
         
-        const moment = 
-        return body
+        const moment = await Moment.create(body);
+
+        response.status(201)
+    
+        return{
+            message: 'Momento criado com sucesso',
+            data: moment,
+        }
 
     }
 }
